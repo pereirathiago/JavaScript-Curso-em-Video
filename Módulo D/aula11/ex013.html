@@ -13,7 +13,7 @@
 
     <script>
         function verificar(){
-            var txtpais = document.getElementById('txtpais')
+            var txtpais = document.getElementById('txtpais') // object
             var pais = String(txtpais.value).toUpperCase()
             var res = document.getElementById('res')
             res.innerHTML = `<p>Seu país de origem é ${pais}</p>`
@@ -22,6 +22,7 @@
             } else {
                 res.innerHTML += `<p>Você é um estrangeiro</p>`
             }
+            // console.log(typeof txtpais)
         }
     </script>
 </body>
