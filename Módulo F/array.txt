@@ -4,7 +4,7 @@ num.push(7) -> adiciona o 7  na ultimo posição
 num.lenght -> mostra quantos elementos tem, nesse caso 5
 num.sort() -> ordena os numeros.
 
-for(var c = 0; c < 5; c++) {
+for(var c = 0; c<num.length; c++) {
        console.log(num[c])
 }
 
