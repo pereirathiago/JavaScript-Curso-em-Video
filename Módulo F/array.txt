@@ -12,5 +12,7 @@ for (let c in valores) {
     console.log(`A posição ${c} tem o valor ${num[c]}`)
 }
 
+num.indexOf(7) -> tem o valor 7 no vetor? Qual posição está? Se nn existir retorna -1
+
 num = [4,5,6,7,8]
        0 1 2 3 4
