@@ -1,32 +1,28 @@
+let num = document.querySelector('input#fnum')
+let lista = document.querySelector('select#flista')
+let res = document.querySelector('div#res')
+let valores = []
 
-function adicionar() {
-    let txtnum = document.getElementById('txtnum')
-    let sel = document.getElementById('txtsel')
-    let v = []
-    if (txtnum.value.length == 0) {
-        alert('Por favor, digite um numero')
+function isNumero(n) {
+    if(Number(n) >= 1 && Number(n) <= 100) {
+        return true
     } else {
-        let num = Number(txtnum.value)
-        if (num < 101 && num > 0) {
-            v.push(num)
-            for(let c in v) {
-                let item = document.createElement('option')
-                item.text = `Valor ${num} adicionado`
-                item.value = `sel{c}`
-                sel.appendChild(item)
-                c++
-            }
-        } else {
-            alert('erro')
-        }
+        return false
     }
 }
 
-function finalizar() {
-    let res = document.getElementById('res')
-    res.innerHTML = `<p>Ao todo temos ${v.length} números cadastrados</p>`
-    res.innerHTML += `<p></p>`
-    res.innerHTML += `<p></p>`
-    res.innerHTML += `<p></p>`
-    res.innerHTML += `<p></p>`
+function inLista(n, l) {
+    if (l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function adicionar() {
+    if(isNumero(num.value) && !inLista(num.value, valores)) {
+        
+    } else {
+        alert('Valor inválido ou já encontrado na lista.')
+    }
 }
