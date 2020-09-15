@@ -1,0 +1,8 @@
+let num = [5,8,4]
+num[3] = 6 -> diciona o numero 6 a 3 posição
+num.push(7) -> adiciona o 7  na ultimo posição
+num.lenght -> mostra quantos elementos tem, nesse caso 5
+num.sort() -> ordena os numeros.
+
+num = [5,8,4,6,7]
+       0 1 2 3 4
